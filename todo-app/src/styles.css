@@ -1,0 +1,6 @@
+.todo.done .name {
+    text-decoration: line-through;
+}
+.todo.done .description {
+    text-decoration: line-through;
+}
