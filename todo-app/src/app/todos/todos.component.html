@@ -5,28 +5,34 @@
             name="toDoName"
             placeholder="Name of ToDo..."
             [(ngModel)] = "toDoName"
+            class="input"
         >
         <input 
             type="text"
             name="toDoDescription"
             placeholder="Description of ToDo..."
             [(ngModel)] = "toDoDescription"
+            class="input"
         >
         <input 
             type="date" 
             name="toDoDeadline"
             [(ngModel)] = "toDoDeadline"   
-            [ngModel]="toDoDeadline | date: 'yyyy-MM-dd'">
+            [ngModel]="toDoDeadline | date: 'yyyy-MM-dd'"
+            class="input"
+        >    
         <input 
             type="submit" 
             value="Add ToDo" 
-            [disabled]="toDoName == '' || toDoDescription == ''">
+            [disabled]="toDoName == '' || toDoDescription == ''"
+            class="submit"
+            >
     </form>
     <div *ngFor="let todo of todos; let i = index" 
     class="todo {{todo.finished ? 'done' : ''}}" >
-        <div class="name" (click)="markToDo(i)">{{ todo.name }}</div>
-        <div class="description" (click)="markToDo(i)">{{ todo.description }}</div>
-        <div *ngIf="todo.deadline" class="date" (click)="markToDo(i)">{{ todo.deadline }}</div>
+        <div class="name" (click)="markToDo(i)"><h1>{{todo.name}}</h1> <br></div>
+        <div class="description" (click)="markToDo(i)"><p>{{ todo.description }}</p><br></div>
+        <div *ngIf="todo.deadline" class="date" (click)="markToDo(i)"><p>Deadline: {{ todo.deadline }}</p><br></div>
         <button class="delete" (click)="deleteToDo(i)">Remove</button>
     </div>
 </div>

@@ -1,6 +1,5 @@
-.todo.done .name {
-    text-decoration: line-through;
-}
-.todo.done .description {
-    text-decoration: line-through;
+* {
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }

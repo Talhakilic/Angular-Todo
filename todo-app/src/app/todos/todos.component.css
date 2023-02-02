@@ -1,0 +1,43 @@
+.todo.done .name {
+    text-decoration: line-through;
+}
+
+.todo.done .description {
+    text-decoration: line-through;
+}
+
+.todo.done .date {
+    text-decoration: line-through;
+}
+
+.todo {
+	padding: 10px 15px;
+	border-bottom: 1px solid #DDD;
+}
+
+.todo:nth-child(even) {
+	background-color: #EEE;
+}
+
+.input {
+	display: block;
+	width: 80%;
+	padding: 10px 15px;
+	background-color: #f3eade;
+	margin-top: 15px;
+	font-size: 20px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.submit {
+	display: block;
+	width: 100%;
+	max-width: 250px;
+    padding: 15px 20px;
+    margin: 15px auto;
+	font-size: 20px;
+	font-weight: 700;
+	background-color: burlywood;
+	color: white;
+}
